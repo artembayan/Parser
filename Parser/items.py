@@ -13,7 +13,6 @@ class ParserItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     timestamp = scrapy.Field()
-    # "RPC":
     url = scrapy.Field()
     title = scrapy.Field()
     brand = scrapy.Field()
@@ -23,6 +22,5 @@ class ParserItem(scrapy.Item):
     assets = scrapy.Field()
     metadata = scrapy.Field()
     description = scrapy.Field()
-    new = scrapy.Field()
     params = scrapy.Field()
     variants = scrapy.Field()

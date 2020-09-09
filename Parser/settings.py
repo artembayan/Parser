@@ -16,9 +16,12 @@ NEWSPIDER_MODULE = 'Parser.spiders'
 
 FEED_EXPORT_ENCODING = 'utf-8'
 
-DOWNLOADER_MIDDLEWARES = {
-    'Parser.middlewares.MyspiderProxyMiddleware': 100,
-}
+COOKIES_ENABLED = True
+COOKIES_DEBUG = True
+# DOWNLOADER_MIDDLEWARES = {
+#     #'Parser.middlewares.MyspiderProxyMiddleware': 100,
+#     #'scrapy.contrib.downloadermiddleware.cookies.CookiesMiddleware'
+# }
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'Parser (+http://www.yourdomain.com)'
 

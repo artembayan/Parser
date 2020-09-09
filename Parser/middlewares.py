@@ -102,9 +102,9 @@ class ParserDownloaderMiddleware(object):
     def spider_opened(self, spider):
         spider.logger.info('Spider opened: %s' % spider.name)
 
-class MyspiderProxyMiddleware(object):
-    def process_request(self, request, spider):
-        if spider.proxy:
-            request.meta['proxy'] = spider.proxy
-        if spider.uagent:
-            request.headers['User-Agent'] = spider.uagent
+# class MyspiderProxyMiddleware(object):
+#     def process_request(self, request, spider):
+#         if spider.proxy:
+#             request.meta['proxy'] = spider.proxy
+#         if spider.uagent:
+#             request.headers['User-Agent'] = spider.uagent
